@@ -1,0 +1,65 @@
+/*Transition*/
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* End of Transition */
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: #DADADA;
+}
+
+.menu_item{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 70px;
+  font-family: "Overlock";
+}
+
+#web{
+  background: url(../img/webdev_lighter.jpg) no-repeat center center;
+  -webkit-backgroyund-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+  color: #000000;
+}
+
+#music{
+  background: url(../img/music_darker.jpg) no-repeat center center;
+  -webkit-backgroyund-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: lighten;
+
+  color: #FFFFFF;
+}
